@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging into Docker Hub...
-      - DOCKER_PASSWORD=Mydockersa
+      - DOCKER_PASSWORD=mydockersa
       - DOCKER_USERNAME=Hello222#
       - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
       - echo Running Gradle build...
